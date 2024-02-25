@@ -1,12 +1,27 @@
 {
   "name": "base-local-storage",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "./node_modules/.bin/babel -d ./ ./src",
+    "dev": "./node_modules/.bin/babel -d ./ ./src --watch"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cardamon/base-local-storage.git"
+  },
   "author": "cardamon",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cardamon/base-local-storage/issues"
+  },
+  "homepage": "https://github.com/cardamon-dk/base-local-storage",
+  "dependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13"
+  }
 }

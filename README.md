@@ -29,7 +29,26 @@ Removes the data from the local storage associated with the provided key.
 
 - **Parameters:**
   - `key`: The key of the data to be removed.
-
+    
 ### 4. `clearAll()`
 
 Clears all data stored in the local storage.
+
+## Usage
+
+```javascript
+import local from 'base-local-storage';
+
+// Example Usage
+local.set('username', 'john_doe', 3600); // Set data with a one-hour expiration
+const username = local.get('username'); // Retrieve data
+
+if (username) {
+    console.log(`Welcome back, ${username}!`);
+} else {
+    console.log('No cached data or data expired.');
+}
+
+local.remove('username'); // Remove data
+local.clearAll(); // Clear all data
+```
