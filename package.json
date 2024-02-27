@@ -1,6 +1,6 @@
 {
   "name": "base-local-storage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cardamon/base-local-storage.git"
+    "url": "git+https://github.com/cardamon-dk/base-local-storage.git"
   },
   "author": "cardamon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cardamon/base-local-storage/issues"
+    "url": "https://github.com/cardamon-dk/base-local-storage/issues"
   },
   "homepage": "https://github.com/cardamon-dk/base-local-storage",
   "dependencies": {
